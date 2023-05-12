@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.cpp
+Matrix.h
+/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.h
+
+/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.h
+iostream
+-
+
+/Users/andrewxia/CLionProjects/MachineLearningLibrary/main.cpp
+iostream
+-
+Matrix.h
+/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.h
+
