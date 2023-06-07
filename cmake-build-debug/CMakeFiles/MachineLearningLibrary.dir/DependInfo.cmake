@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.cpp" "/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o"
+  "/Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp" "/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o"
   "/Users/andrewxia/CLionProjects/MachineLearningLibrary/main.cpp" "/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles/MachineLearningLibrary.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

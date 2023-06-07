@@ -80,10 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.cpp">
+		<Unit filename="/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.h">
 			<Option target="MachineLearningLibrary"/>
 		</Unit>
-		<Unit filename="/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.h">
+		<Unit filename="/Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp">
+			<Option target="MachineLearningLibrary"/>
+		</Unit>
+		<Unit filename="/Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.h">
 			<Option target="MachineLearningLibrary"/>
 		</Unit>
 		<Unit filename="/Users/andrewxia/CLionProjects/MachineLearningLibrary/main.cpp">

@@ -6,15 +6,22 @@
 #define MACHINELEARNINGLIBRARY_MATRIX_H
 
 #include <iostream>
+#include <string>
+#include <cstdlib>
 
-template<typename T, int WIDTH, int HEIGHT>
+template<typename T>
 class Matrix {
 private:
     T* a;
 
+    int HEIGHT;
+    int WIDTH;
+
 public:
 
-    Matrix() {
+    Matrix(int height, int width) {
+        HEIGHT = height;
+        WIDTH = width;
         a = new T[HEIGHT * WIDTH];
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < WIDTH; i++) {
@@ -23,7 +30,9 @@ public:
         }
     }
 
-    Matrix(T* i_a) {
+    Matrix(T* i_a, int height, int width) {
+        HEIGHT = height;
+        WIDTH = width;
         a = new T[HEIGHT * WIDTH];
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < WIDTH; i++) {
@@ -33,7 +42,10 @@ public:
         }
     }
 
-    Matrix(const Matrix<T, WIDTH, HEIGHT>& other) {
+    Matrix(const Matrix<float>& other) {
+        Dimensions d = other.get_dimensions();
+        HEIGHT = d.y;
+        WIDTH = d.x;
         a = new T[HEIGHT * WIDTH];
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < WIDTH; i++) {
@@ -42,24 +54,35 @@ public:
         }
     }
 
-    Matrix<T, WIDTH, HEIGHT>& operator=(const Matrix<T, WIDTH, HEIGHT>& other) {
-        a = new T[HEIGHT * WIDTH];
-        for (int j = 0; j < HEIGHT; j++) {
-            for (int i = 0; i < WIDTH; i++) {
-                (*this)(j, i) = other(j, i);
-            }
-        }
+    static void swap(Matrix& a, Matrix& b) {
+        std::swap(a.a, b.a);
+        std::swap(a.WIDTH, b.WIDTH);
+        std::swap(a.HEIGHT, b.HEIGHT);
+    }
+
+    Matrix<T>& operator=(Matrix<T> other) {
+        swap(*this, other);
         return *this;
     }
 
+    int get_height() const { return HEIGHT;}
+    int get_width() const { return WIDTH;}
+
 
     T& operator()(int y, int x) {
+        if (y >= HEIGHT || x >= WIDTH) throw std::string("MATRIX OUT OF BOUNDS");
         return a[y * WIDTH + x];
     }
 
-    Matrix<T, WIDTH, HEIGHT> operator+(Matrix<T, WIDTH, HEIGHT> other) {
+    const T& operator()(int y, int x) const {
+        if (y >= HEIGHT || x >= WIDTH) throw std::string("MATRIX OUT OF BOUNDS");
+        return a[y * WIDTH + x];
+    }
+
+    Matrix<T> operator+(Matrix<T> other) {
         // Coefficient-wise add
-        Matrix<T, WIDTH, HEIGHT> m;
+        assert(this->get_height() == other.get_height() && this->get_width() == other.get_width());
+        Matrix<T> m(other.get_height(), other.get_width());
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < WIDTH; i++) {
                 m(j, i) = (*this)(j, i) + other(j, i);
@@ -68,9 +91,10 @@ public:
         return m;
     }
 
-    Matrix<T, WIDTH, HEIGHT> operator-(Matrix<T, WIDTH, HEIGHT> other) {
+    Matrix<T> operator-(Matrix<T> other) {
         // Coefficient-wise subtract
-        Matrix<T, WIDTH, HEIGHT> m;
+        assert(this->get_height() == other.get_height() && this->get_width() == other.get_width());
+        Matrix<T> m(HEIGHT, WIDTH);
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < WIDTH; i++) {
                 m(j, i) = (*this)(j, i) - other(j, i);
@@ -79,9 +103,10 @@ public:
         return m;
     }
 
-    Matrix<T, WIDTH, HEIGHT> coeff_mult(Matrix<T, WIDTH, HEIGHT> other) {
+    Matrix<T> operator*(Matrix<T> other) {
         // Coefficient-wise mult
-        Matrix<T, WIDTH, HEIGHT> m;
+        assert(this->get_height() == other.get_height() && this->get_width() == other.get_width());
+        Matrix<T> m(HEIGHT, WIDTH);
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < WIDTH; i++) {
                 m(j, i) = (*this)(j, i) * other(j, i);
@@ -90,10 +115,11 @@ public:
         return m;
     }
 
-    template<int w2>
-    Matrix<T, w2, HEIGHT> operator*(Matrix<T, w2, WIDTH> other) {
+    Matrix<T> dot(Matrix<T> other) {
         // Matrix multiplication
-        Matrix<T, w2, HEIGHT> m;
+        assert(this->get_width() == other.get_height());
+        int w2 = other.get_width();
+        Matrix<T> m(HEIGHT, w2);
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < w2; i++) {
                 for (int k = 0; k < WIDTH; k++) {
@@ -113,6 +139,7 @@ public:
     }
 
     void print() {
+        std::cout << "Dimensions (Height, Width): " << HEIGHT << ' ' << WIDTH << "\n";
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < WIDTH; i++) {
                 std::cout << (*this)(j, i) << ' ';
@@ -125,7 +152,7 @@ public:
         int y, x;
     };
 
-    Dimensions get_dimensions() {
+    Dimensions get_dimensions() const {
         return Dimensions{HEIGHT, WIDTH};
     }
 };

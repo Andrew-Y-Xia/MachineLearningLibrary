@@ -129,29 +129,29 @@ MachineLearningLibrary/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/build
 .PHONY : MachineLearningLibrary/fast
 
-Matrix.o: Matrix.cpp.o
-.PHONY : Matrix.o
+Model.o: Model.cpp.o
+.PHONY : Model.o
 
 # target to build an object file
-Matrix.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o
-.PHONY : Matrix.cpp.o
+Model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o
+.PHONY : Model.cpp.o
 
-Matrix.i: Matrix.cpp.i
-.PHONY : Matrix.i
+Model.i: Model.cpp.i
+.PHONY : Model.i
 
 # target to preprocess a source file
-Matrix.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.i
-.PHONY : Matrix.cpp.i
+Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Model.cpp.i
+.PHONY : Model.cpp.i
 
-Matrix.s: Matrix.cpp.s
-.PHONY : Matrix.s
+Model.s: Model.cpp.s
+.PHONY : Model.s
 
 # target to generate assembly for a file
-Matrix.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.s
-.PHONY : Matrix.cpp.s
+Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s
+.PHONY : Model.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MachineLearningLibrary"
-	@echo "... Matrix.o"
-	@echo "... Matrix.i"
-	@echo "... Matrix.s"
+	@echo "... Model.o"
+	@echo "... Model.i"
+	@echo "... Model.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

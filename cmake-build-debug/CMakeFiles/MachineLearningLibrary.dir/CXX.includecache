@@ -6,17 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.cpp
-Matrix.h
-/Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.h
-
 /Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.h
 iostream
 -
+string
+-
+cstdlib
+-
 
-/Users/andrewxia/CLionProjects/MachineLearningLibrary/main.cpp
-iostream
+/Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp
+Model.h
+/Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.h
+
+/Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.h
+vector
 -
 Matrix.h
 /Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.h
+cstdlib
+-
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o"
+  "CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o"
   "CMakeFiles/MachineLearningLibrary.dir/main.cpp.o"
   "MachineLearningLibrary"
   "MachineLearningLibrary.pdb"

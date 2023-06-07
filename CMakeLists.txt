@@ -3,4 +3,4 @@ project(MachineLearningLibrary)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(MachineLearningLibrary main.cpp Matrix.h)
+add_executable(MachineLearningLibrary main.cpp Matrix.h Model.cpp Model.h)

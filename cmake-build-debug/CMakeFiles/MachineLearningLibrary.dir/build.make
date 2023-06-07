@@ -79,29 +79,29 @@ CMakeFiles/MachineLearningLibrary.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MachineLearningLibrary.dir/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andrewxia/CLionProjects/MachineLearningLibrary/main.cpp -o CMakeFiles/MachineLearningLibrary.dir/main.cpp.s
 
-CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o: CMakeFiles/MachineLearningLibrary.dir/flags.make
-CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o: ../Matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o -c /Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.cpp
+CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o: CMakeFiles/MachineLearningLibrary.dir/flags.make
+CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o: ../Model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o -c /Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp
 
-CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.cpp > CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.i
+CMakeFiles/MachineLearningLibrary.dir/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MachineLearningLibrary.dir/Model.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp > CMakeFiles/MachineLearningLibrary.dir/Model.cpp.i
 
-CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andrewxia/CLionProjects/MachineLearningLibrary/Matrix.cpp -o CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.s
+CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp -o CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s
 
 # Object files for target MachineLearningLibrary
 MachineLearningLibrary_OBJECTS = \
 "CMakeFiles/MachineLearningLibrary.dir/main.cpp.o" \
-"CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o"
+"CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o"
 
 # External object files for target MachineLearningLibrary
 MachineLearningLibrary_EXTERNAL_OBJECTS =
 
 MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/main.cpp.o
-MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o
+MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o
 MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/build.make
 MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MachineLearningLibrary"

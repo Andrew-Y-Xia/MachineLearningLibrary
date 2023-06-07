@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/MachineLearningLibrary.dir/main.cpp.o CMakeFiles/MachineLearningLibrary.dir/Matrix.cpp.o -o MachineLearningLibrary 
+/usr/bin/g++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/MachineLearningLibrary.dir/main.cpp.o CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o -o MachineLearningLibrary 
