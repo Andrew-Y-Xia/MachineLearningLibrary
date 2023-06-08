@@ -5,7 +5,7 @@
 #include "Model.h"
 
 std::mt19937 gen(42);
-std::normal_distribution<float> d(0, 1);
+std::normal_distribution<float> d(0, 0.08);
 
 Model::Model(vector<int> l) {
     this->layers = move(l);
@@ -61,8 +61,12 @@ T& index(vector<T>& a, int i) {
 }
 
 CostGradient Model::backprop(const Matrix<float>& input, const Matrix<float>& output) {
-    vector<Matrix<float>> nabla_b(biases);
-    vector<Matrix<float>> nabla_w(weights);
+    vector<Matrix<float>> nabla_b;
+    vector<Matrix<float>> nabla_w;
+    for (int i = 0; i < biases.size(); i++) {
+        nabla_b.emplace_back(biases[i].get_height(), biases[i].get_width());
+        nabla_w.emplace_back(weights[i].get_height(), weights[i].get_width());
+    }
 
     auto activation = input;
     vector<Matrix<float>> activations;

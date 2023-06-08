@@ -244,7 +244,7 @@ public:
         std::cout << "Dimensions (Height, Width): " << HEIGHT << ' ' << WIDTH << "\n";
         for (int j = 0; j < HEIGHT; j++) {
             for (int i = 0; i < WIDTH; i++) {
-                std::cout << (*this)(j, i);
+                std::cout << (*this)(j, i) << ' ';
             }
             std::cout << '\n';
         }
