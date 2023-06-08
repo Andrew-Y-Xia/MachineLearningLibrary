@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/andrewxia/CLionProjects/MachineLearningLibrary
+CMAKE_SOURCE_DIR = /Users/andy/Documents/GitHub/MachineLearningLibrary
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug/CMakeFiles /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,6 +153,30 @@ Model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s
 .PHONY : Model.cpp.s
 
+Parser.o: Parser.cpp.o
+.PHONY : Parser.o
+
+# target to build an object file
+Parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.o
+.PHONY : Parser.cpp.o
+
+Parser.i: Parser.cpp.i
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MachineLearningLibrary.dir/build.make CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... Model.o"
 	@echo "... Model.i"
 	@echo "... Model.s"
+	@echo "... Parser.o"
+	@echo "... Parser.i"
+	@echo "... Parser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

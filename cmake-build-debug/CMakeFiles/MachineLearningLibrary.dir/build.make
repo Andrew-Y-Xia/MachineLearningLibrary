@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/andrewxia/CLionProjects/MachineLearningLibrary
+CMAKE_SOURCE_DIR = /Users/andy/Documents/GitHub/MachineLearningLibrary
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MachineLearningLibrary.dir/depend.make
@@ -68,43 +68,58 @@ include CMakeFiles/MachineLearningLibrary.dir/flags.make
 
 CMakeFiles/MachineLearningLibrary.dir/main.cpp.o: CMakeFiles/MachineLearningLibrary.dir/flags.make
 CMakeFiles/MachineLearningLibrary.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MachineLearningLibrary.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MachineLearningLibrary.dir/main.cpp.o -c /Users/andrewxia/CLionProjects/MachineLearningLibrary/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MachineLearningLibrary.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MachineLearningLibrary.dir/main.cpp.o -c /Users/andy/Documents/GitHub/MachineLearningLibrary/main.cpp
 
 CMakeFiles/MachineLearningLibrary.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MachineLearningLibrary.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andrewxia/CLionProjects/MachineLearningLibrary/main.cpp > CMakeFiles/MachineLearningLibrary.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andy/Documents/GitHub/MachineLearningLibrary/main.cpp > CMakeFiles/MachineLearningLibrary.dir/main.cpp.i
 
 CMakeFiles/MachineLearningLibrary.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MachineLearningLibrary.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andrewxia/CLionProjects/MachineLearningLibrary/main.cpp -o CMakeFiles/MachineLearningLibrary.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andy/Documents/GitHub/MachineLearningLibrary/main.cpp -o CMakeFiles/MachineLearningLibrary.dir/main.cpp.s
 
 CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o: CMakeFiles/MachineLearningLibrary.dir/flags.make
 CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o: ../Model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o -c /Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o -c /Users/andy/Documents/GitHub/MachineLearningLibrary/Model.cpp
 
 CMakeFiles/MachineLearningLibrary.dir/Model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MachineLearningLibrary.dir/Model.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp > CMakeFiles/MachineLearningLibrary.dir/Model.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andy/Documents/GitHub/MachineLearningLibrary/Model.cpp > CMakeFiles/MachineLearningLibrary.dir/Model.cpp.i
 
 CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andrewxia/CLionProjects/MachineLearningLibrary/Model.cpp -o CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andy/Documents/GitHub/MachineLearningLibrary/Model.cpp -o CMakeFiles/MachineLearningLibrary.dir/Model.cpp.s
+
+CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.o: CMakeFiles/MachineLearningLibrary.dir/flags.make
+CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.o: ../Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.o -c /Users/andy/Documents/GitHub/MachineLearningLibrary/Parser.cpp
+
+CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andy/Documents/GitHub/MachineLearningLibrary/Parser.cpp > CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.i
+
+CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andy/Documents/GitHub/MachineLearningLibrary/Parser.cpp -o CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.s
 
 # Object files for target MachineLearningLibrary
 MachineLearningLibrary_OBJECTS = \
 "CMakeFiles/MachineLearningLibrary.dir/main.cpp.o" \
-"CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o"
+"CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o" \
+"CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.o"
 
 # External object files for target MachineLearningLibrary
 MachineLearningLibrary_EXTERNAL_OBJECTS =
 
 MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/main.cpp.o
 MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/Model.cpp.o
+MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/Parser.cpp.o
 MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/build.make
 MachineLearningLibrary: CMakeFiles/MachineLearningLibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MachineLearningLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MachineLearningLibrary"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MachineLearningLibrary.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -116,6 +131,6 @@ CMakeFiles/MachineLearningLibrary.dir/clean:
 .PHONY : CMakeFiles/MachineLearningLibrary.dir/clean
 
 CMakeFiles/MachineLearningLibrary.dir/depend:
-	cd /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/andrewxia/CLionProjects/MachineLearningLibrary /Users/andrewxia/CLionProjects/MachineLearningLibrary /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug /Users/andrewxia/CLionProjects/MachineLearningLibrary/cmake-build-debug/CMakeFiles/MachineLearningLibrary.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/andy/Documents/GitHub/MachineLearningLibrary /Users/andy/Documents/GitHub/MachineLearningLibrary /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug /Users/andy/Documents/GitHub/MachineLearningLibrary/cmake-build-debug/CMakeFiles/MachineLearningLibrary.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MachineLearningLibrary.dir/depend
 
