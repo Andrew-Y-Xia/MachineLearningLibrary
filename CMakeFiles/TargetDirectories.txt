@@ -1,0 +1,3 @@
+/home/andrewx/Github/MachineLearningLibrary/CMakeFiles/MachineLearningLibrary.dir
+/home/andrewx/Github/MachineLearningLibrary/CMakeFiles/edit_cache.dir
+/home/andrewx/Github/MachineLearningLibrary/CMakeFiles/rebuild_cache.dir

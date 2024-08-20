@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "Matrix.h"
 #include "Model.h"
 #include "Parser.h"

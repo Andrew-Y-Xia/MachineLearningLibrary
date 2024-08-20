@@ -4,7 +4,7 @@ project(MachineLearningLibrary)
 set(CMAKE_CXX_STANDARD 14)
 
 add_compile_options(
-        -Wall -Werror
+	-Wall -Werror -Wno-sign-compare
         $<$<CONFIG:RELEASE>:-O3> $<$<CONFIG:RELEASE>:-flto> $<$<CONFIG:RELEASE>:-march=native>
         $<$<CONFIG:DEBUG>:-O1>
         $<$<CONFIG:DEBUG>:-ggdb3>

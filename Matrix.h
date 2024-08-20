@@ -8,7 +8,9 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+#include <cassert>
 #include <math.h>
+#include <vector>
 
 template<typename T>
 class Matrix {

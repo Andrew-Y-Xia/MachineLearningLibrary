@@ -9,6 +9,7 @@
 #include "Matrix.h"
 #include <cstdlib>
 #include <cmath>
+#include <cassert>
 #include <random>
 
 using std::vector;
